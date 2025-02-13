@@ -3,19 +3,19 @@ import subprocess
 
 def write_slogan():
     print("Checking Status")
-    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/cyt/monitor.sh; read -p \"Press Enter to close...\"'"])
+    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/chasing_your_tail/cyt/monitor.sh; read -p \"Press Enter to close...\"'"])
     
 def func_delete_ignore():
     print("Deleting Ignore Lists")
-    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/cyt/delete_ignore_lists.sh; read -p \"Press Enter to close...\"'"])
+    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/chasing_your_tail/cyt/delete_ignore_lists.sh; read -p \"Press Enter to close...\"'"])
     
 def func_create_ignore():
     print("Creating Ignore Lists")
-    subprocess.call(["lxterminal", "-e", "bash -c 'python3 /home/pi/Desktop/cyt/create_ignore_list.py; read -p \"Press Enter to close...\"'"])
+    subprocess.call(["lxterminal", "-e", "bash -c 'python3 /home/pi/Desktop/chasing_your_tail/cyt/create_ignore_list.py; read -p \"Press Enter to close...\"'"])
     
 def func_run_cyt():
     print("Running CYT")
-    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/cyt/chasing_your_tail.sh; read -p \"Press Enter to close...\"'"])
+    subprocess.call(["lxterminal", "-e", "bash -c '/home/pi/Desktop/chasing_your_tail/cyt/chasing_your_tail.sh; read -p \"Press Enter to close...\"'"])
     
 
 root = tk.Tk()
